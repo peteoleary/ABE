@@ -6,6 +6,8 @@
 from charm.toolbox.pairinggroup import PairingGroup, GT
 from ABE.ac17 import AC17CPABE
 
+from pudb import set_trace; set_trace()
+
 class ABEOperations:
 
     def __init__(self) -> None:
@@ -38,7 +40,8 @@ class ABEOperations:
 
 
 
-def main(inputfile, outputfile, encrypt, pk_file, msk_file, key_file, debug):
+# def main(inputfile, outputfile, encrypt, pk_file, msk_file, key_file, debug):
+def main():
 
     ops = ABEOperations()
     ops.setup()
@@ -65,6 +68,7 @@ import sys, getopt
 
 if __name__ == "__main__":
 
+    debug = True
     main()
     exit()
 
