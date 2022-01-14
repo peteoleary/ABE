@@ -2,6 +2,8 @@ from charm.schemes.pkenc.pkenc_cs98 import CS98
 from charm.toolbox.eccurve import prime192v1
 from charm.toolbox.ecgroup import ECGroup
 
+from pudb import set_trace; set_trace()
+
 groupObj = ECGroup(prime192v1)
 pkenc = CS98(groupObj)
 
